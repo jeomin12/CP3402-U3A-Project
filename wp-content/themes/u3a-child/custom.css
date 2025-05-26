@@ -789,6 +789,223 @@ body {
     }
   }
   
+/* -------------------------------------
+   NEWS & RESOURCES PAGE STYLES
+------------------------------------- */
+
+.news-hero {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .news-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .news-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  .news-hero-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  /* Latest News Section */
+  .latest-news h2,
+  .resources h2 {
+    text-align: center;
+    color: #0057a8;
+    margin-bottom: 30px;
+  }
+  
+  .grid-columns-2 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .news-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .news-item h3 {
+    color: #106d5e;
+    margin-bottom: 10px;
+  }
+  
+  .news-item p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Resources List */
+  .resource-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .resource-list li {
+    margin-bottom: 12px;
+  }
+  
+  .resource-list a {
+    text-decoration: none;
+    color: #0057a8;
+    font-weight: 500;
+  }
+  
+  .resource-list a:hover {
+    text-decoration: underline;
+    color: #003b80;
+  }
+  
+  /* Call to Action */
+  .call-to-action {
+    background-color: #0057a8;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  .call-to-action .btn {
+    margin: 0 10px;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .news-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .resource-list {
+      font-size: 0.95rem;
+    }
+  }
+  
+/* -------------------------------------
+   SUPPORT US PAGE STYLES
+------------------------------------- */
+
+.support-hero {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .support-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .support-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  .support-hero-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  /* Support Methods Grid */
+  .support-methods h2 {
+    text-align: center;
+    color: #0057a8;
+    margin-bottom: 40px;
+  }
+  
+  .grid-columns-3 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .card h3 {
+    color: #106d5e;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .card .btn {
+    margin-top: 10px;
+  }
+  
+  /* CTA */
+  .call-to-action {
+    background-color: #0057a8;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  .call-to-action .btn {
+    margin: 0 10px;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .support-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .card p {
+      font-size: 0.95rem;
+    }
+  }
+  
   
   
   

@@ -1,108 +1,83 @@
 <?php
 /**
- * Template Name: Homepage
+ * Template Name: Front Page
+ * Description: A content-rich, modern front page for U3A Townsville.
  */
-get_header();
-?>
 
-<main id="primary" class="site-main homepage-template">
+get_header(); ?>
 
-    <!-- Hero Section -->
-    <section class="home-hero">
-        <div class="hero-content">
-            <h1>Welcome to U3A Townsville</h1>
-            <p class="hero-subtitle">Lifelong learning for retirees and semi-retirees</p>
-            <div class="hero-buttons">
-                <a href="/membership" class="button primary">Join Us</a>
-                <a href="/courses" class="button secondary">View Courses</a>
-            </div>
-        </div>
-    </section>
+<section class="hero" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/U3APromoDay.jpg');">
+  <div class="container hero-content">
+    <h1>Welcome to U3A Townsville</h1>
+    <p>Empowering seniors through lifelong learning, active living, and social connection in our vibrant community.</p>
+    <a href="/membership" class="btn btn-secondary">Join U3A Today</a>
+  </div>
+</section>
 
-    <!-- Featured Courses -->
-    <section class="featured-section">
-        <h2 class="section-title">Featured Courses</h2>
-        <div class="course-grid">
-            <?php
-            // Example of displaying 3 featured courses
-            $courses = new WP_Query(array(
-                'post_type' => 'course',
-                'posts_per_page' => 3,
-                'meta_key' => 'featured',
-                'meta_value' => 'yes'
-            ));
-            
-            if ($courses->have_posts()) :
-                while ($courses->have_posts()) : $courses->the_post(); ?>
-                    <article class="course-card">
-                        <?php if (has_post_thumbnail()) : ?>
-                            <div class="course-thumbnail">
-                                <?php the_post_thumbnail('medium'); ?>
-                            </div>
-                        <?php endif; ?>
-                        <div class="course-content">
-                            <h3><?php the_title(); ?></h3>
-                            <p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
-                            <a href="<?php the_permalink(); ?>" class="read-more">Learn More</a>
-                        </div>
-                    </article>
-                <?php endwhile;
-                wp_reset_postdata();
-            endif;
-            ?>
-        </div>
-    </section>
 
-    <!-- Upcoming Events -->
-    <section class="events-section">
-        <h2 class="section-title">Upcoming Events</h2>
-        <div class="events-list">
-            <?php
-            // Example of displaying upcoming events
-            $events = new WP_Query(array(
-                'post_type' => 'event',
-                'posts_per_page' => 3,
-                'meta_key' => 'event_date',
-                'orderby' => 'meta_value',
-                'order' => 'ASC',
-                'meta_query' => array(
-                    array(
-                        'key' => 'event_date',
-                        'value' => date('Y-m-d'),
-                        'compare' => '>=',
-                        'type' => 'DATE'
-                    )
-                )
-            ));
-            
-            if ($events->have_posts()) :
-                while ($events->have_posts()) : $events->the_post(); ?>
-                    <article class="event-card">
-                        <div class="event-date">
-                            <?php echo date('j M', strtotime(get_field('event_date'))); ?>
-                        </div>
-                        <div class="event-details">
-                            <h3><?php the_title(); ?></h3>
-                            <p><?php echo wp_trim_words(get_the_excerpt(), 15); ?></p>
-                        </div>
-                    </article>
-                <?php endwhile;
-                wp_reset_postdata();
-            endif;
-            ?>
-        </div>
-    </section>
+<section class="about-u3a section">
+  <div class="container">
+    <h2>What is U3A?</h2>
+    <p>University of the Third Age (U3A) is a community-based organization that fosters lifelong learning and healthy aging for people in their 'third age' of life. We offer educational, social, and physical activities to keep minds and bodies engaged.</p>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Terry and TCC  Maurie Soars at opening of Vincent campus office.jpeg" alt="Vincent campus opening">
+  </div>
+</section>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to start your learning journey?</h2>
-            <a href="/contact" class="button primary">Get in Touch</a>
-        </div>
-    </section>
+<section class="activities section">
+  <div class="container">
+    <h2>Popular Activities</h2>
+    <div class="grid-columns-3">
+      <div class="card">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/MagneticIslandTaiChi003.jpg" alt="Tai Chi">
+        <h3>Tai Chi</h3>
+        <p>Improve balance and mental focus with our Tai Chi classes held on Magnetic Island and in Townsville.</p>
+      </div>
+      <div class="card">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Spanish.jpg" alt="Spanish Class">
+        <h3>Language Learning</h3>
+        <p>Join friendly conversation groups in Spanish, French, Russian and more. Beginners welcome!</p>
+      </div>
+      <div class="card">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Photographyclass.jpg" alt="Photography Class">
+        <h3>Photography</h3>
+        <p>Learn the art of photography from passionate peers and share your work with others.</p>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="/activities" class="btn">View All Activities</a>
+    </div>
+  </div>
+</section>
 
-</main>
+<section class="events-news section bg-light">
+  <div class="container">
+    <h2>Latest News & Events</h2>
+    <div class="grid-columns-2">
+      <div class="event">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/FridayTalk_SuzieDancenorth.jpg" alt="Friday Talk">
+        <h3>Friday Talks</h3>
+        <p>Weekly educational talks on diverse topics, free for all members at Aitkenvale Library.</p>
+      </div>
+      <div class="event">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SuccessfulInvestors2.jpg" alt="Investment Class">
+        <h3>Finance & Learning</h3>
+        <p>Stay sharp and informed with classes on investing, budgeting and smart money habits.</p>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="/news" class="btn">More News</a>
+    </div>
+  </div>
+</section>
 
-<?php
-get_footer();
-?>
+<section class="call-to-action section">
+  <div class="container text-center">
+    <h2>Get Involved with U3A Today</h2>
+    <p>Whether you're looking to learn, teach, volunteer or make new friends — U3A Townsville has something for you.</p>
+    <a href="/membership" class="btn btn-secondary">Become a Member</a>
+    <a href="/volunteer" class="btn btn-outline">Volunteer With Us</a>
+
+  </div>
+</section>
+
+<?php get_footer(); ?>

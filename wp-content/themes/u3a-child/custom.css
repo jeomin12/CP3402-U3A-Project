@@ -483,5 +483,110 @@ body {
       font-size: 1rem;
     }
   }
+
+/* -------------------------------------
+   COURSES & ACTIVITIES PAGE STYLES
+------------------------------------- */
+
+.activity-hero {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+  }
+  
+  .activity-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .activity-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  .activity-hero-image {
+    max-width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Overview Section */
+  .activity-overview h2 {
+    color: #0057a8;
+    margin-bottom: 15px;
+  }
+  
+  .activity-overview p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  
+  /* Course Categories Grid */
+  .course-categories h2 {
+    text-align: center;
+    color: #0057a8;
+    margin-bottom: 40px;
+  }
+  
+  .grid-columns-3 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #106d5e;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* CTA Section */
+  .call-to-action {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  /* Responsive Tweaks */
+  @media screen and (max-width: 768px) {
+    .activity-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .grid-columns-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
   
   

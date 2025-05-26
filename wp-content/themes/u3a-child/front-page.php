@@ -1,42 +1,108 @@
 <?php
 /**
- * Template Name: U3A Custom Homepage
+ * Template Name: Homepage
  */
 get_header();
 ?>
 
-<header>
-  <h1>Connecting Seniors to Lifelong Learning</h1>
-  <div class="cta-buttons">
-    <a href="/get-involved">Become a Member</a>
-    <a href="/courses">View Activities</a>
-  </div>
-</header>
+<main id="primary" class="site-main homepage-template">
 
-<div class="section">
-  <h2>Welcome to U3A Townsville</h2>
-  <p>U3A Townsville empowers seniors through learning, social engagement, and community activities. Join over 430 members enjoying courses, talks, and more.</p>
-</div>
+    <!-- Hero Section -->
+    <section class="home-hero">
+        <div class="hero-content">
+            <h1>Welcome to U3A Townsville</h1>
+            <p class="hero-subtitle">Lifelong learning for retirees and semi-retirees</p>
+            <div class="hero-buttons">
+                <a href="/membership" class="button primary">Join Us</a>
+                <a href="/courses" class="button secondary">View Courses</a>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Featured Activities</h2>
-  <ul>
-    <li>Tai Chi – Tuesday & Friday @ Nelly Bay</li>
-    <li>Spanish Conversation – Thursdays</li>
-    <li>STEM Talks – Weekly @ U3A Vincent Campus</li>
-  </ul>
-</div>
+    <!-- Featured Courses -->
+    <section class="featured-section">
+        <h2 class="section-title">Featured Courses</h2>
+        <div class="course-grid">
+            <?php
+            // Example of displaying 3 featured courses
+            $courses = new WP_Query(array(
+                'post_type' => 'course',
+                'posts_per_page' => 3,
+                'meta_key' => 'featured',
+                'meta_value' => 'yes'
+            ));
+            
+            if ($courses->have_posts()) :
+                while ($courses->have_posts()) : $courses->the_post(); ?>
+                    <article class="course-card">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <div class="course-thumbnail">
+                                <?php the_post_thumbnail('medium'); ?>
+                            </div>
+                        <?php endif; ?>
+                        <div class="course-content">
+                            <h3><?php the_title(); ?></h3>
+                            <p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+                            <a href="<?php the_permalink(); ?>" class="read-more">Learn More</a>
+                        </div>
+                    </article>
+                <?php endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Upcoming Events</h2>
-  <ul>
-    <li>Apr 27: Talk with Ewe @ Aitkenvale Library</li>
-    <li>Apr 29: Gardening Expo Bus Trip</li>
-  </ul>
-</div>
+    <!-- Upcoming Events -->
+    <section class="events-section">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="events-list">
+            <?php
+            // Example of displaying upcoming events
+            $events = new WP_Query(array(
+                'post_type' => 'event',
+                'posts_per_page' => 3,
+                'meta_key' => 'event_date',
+                'orderby' => 'meta_value',
+                'order' => 'ASC',
+                'meta_query' => array(
+                    array(
+                        'key' => 'event_date',
+                        'value' => date('Y-m-d'),
+                        'compare' => '>=',
+                        'type' => 'DATE'
+                    )
+                )
+            ));
+            
+            if ($events->have_posts()) :
+                while ($events->have_posts()) : $events->the_post(); ?>
+                    <article class="event-card">
+                        <div class="event-date">
+                            <?php echo date('j M', strtotime(get_field('event_date'))); ?>
+                        </div>
+                        <div class="event-details">
+                            <h3><?php the_title(); ?></h3>
+                            <p><?php echo wp_trim_words(get_the_excerpt(), 15); ?></p>
+                        </div>
+                    </article>
+                <?php endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
+        </div>
+    </section>
 
-<footer>
-  <p>&copy; <?php echo date('Y'); ?> U3A Townsville</p>
-</footer>
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to start your learning journey?</h2>
+            <a href="/contact" class="button primary">Get in Touch</a>
+        </div>
+    </section>
 
-<?php get_footer(); ?>
+</main>
+
+<?php
+get_footer();
+?>

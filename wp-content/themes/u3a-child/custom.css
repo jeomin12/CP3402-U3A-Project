@@ -587,6 +587,103 @@ body {
       grid-template-columns: 1fr;
     }
   }
+
+/* -------------------------------------
+   MEMBERSHIP PAGE STYLES
+------------------------------------- */
+
+.membership-hero {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+  }
+  
+  .membership-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .membership-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  .membership-hero-image {
+    max-width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Why Join Section */
+  .why-join h2 {
+    color: #0057a8;
+    margin-bottom: 20px;
+  }
+  
+  .membership-benefits {
+    padding-left: 20px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  
+  .membership-benefits li {
+    margin-bottom: 10px;
+  }
+  
+  /* Membership Details */
+  .membership-details h2,
+  .renew h2 {
+    color: #0057a8;
+    margin-bottom: 20px;
+  }
+  
+  .membership-details ul,
+  .renew ul {
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .membership-details li,
+  .renew li {
+    margin-bottom: 10px;
+  }
+  
+  /* Get Involved Call-to-Action */
+  .get-involved {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .get-involved h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .get-involved p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  /* Button spacing inside CTA */
+  .get-involved .btn {
+    margin: 0 10px;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .membership-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .get-involved h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
   
   
   

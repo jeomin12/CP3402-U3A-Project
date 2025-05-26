@@ -1,0 +1,378 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* HEADER STYLING */
+  .u3a-header {
+    background-color: #0057a8;
+    color: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Top Bar */
+  .u3a-header-top {
+    padding: 10px 20px;
+    border-bottom: 1px solid #004080;
+  }
+  
+  .u3a-header-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .u3a-logo img {
+    height: 55px;
+    width: auto;
+  }
+  
+  .u3a-header-utilities a {
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .u3a-search-form {
+    display: inline-flex;
+    margin-left: 20px;
+  }
+  .u3a-search-form input[type="search"] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  .u3a-search-form button {
+    background: #ffc107;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  /* NAV BAR */
+  .u3a-navbar {
+    background-color: #ffffff;
+    border-bottom: 3px solid #0057a8;
+  }
+  
+  .u3a-nav-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+  }
+  
+  /* MAIN MENU */
+  .u3a-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .u3a-menu li {
+    position: relative;
+  }
+  
+  .u3a-menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0057a8;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .u3a-menu a:hover {
+    background-color: #0057a8;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  /* DROPDOWNS */
+  .u3a-menu li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    display: none;
+    z-index: 999;
+  }
+  
+  .u3a-menu li:hover > ul {
+    display: block;
+  }
+  
+  .u3a-menu li ul li {
+    width: 100%;
+  }
+  
+  .u3a-menu li ul a {
+    padding: 10px 15px;
+    color: #0057a8;
+    background-color: #f4f8fb;
+  }
+  .u3a-menu li ul a:hover {
+    background-color: #0057a8;
+    color: white;
+  }
+  
+  /* DONATE BUTTON */
+  .u3a-donate-btn {
+    background-color: #106d5e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .u3a-donate-btn:hover {
+    background-color: #0b5d50;
+  }
+  
+  /* RESPONSIVE MENU - BASIC STACKING */
+  @media screen and (max-width: 768px) {
+    .u3a-nav-inner, .u3a-header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .u3a-menu {
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+    }
+    .u3a-menu li ul {
+      position: relative;
+      box-shadow: none;
+    }
+  }
+  
+
+/* Homepage Styles */
+/* Base Setup */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .bg-light {
+    background-color: #f0f4f8;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #0057a8;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    margin: 10px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    background-color: #0057a8;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #004080;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 2px solid #106d5e;
+    color: #106d5e;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 0.3s;
+  }
+  
+  .btn-outline:hover {
+    background-color: #106d5e;
+    color: #fff;
+  }
+  
+
+  
+  .btn-secondary {
+    background-color: #106d5e;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #0b5d50;
+  }
+  
+  /* About Section */
+  .about-u3a img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Grid Sections */
+  .grid-columns-3,
+  .grid-columns-2 {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .grid-columns-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .grid-columns-2 {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+  
+  .card, .event {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .card img, .event img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3, .event h3 {
+    color: #0057a8;
+    margin-bottom: 10px;
+  }
+  
+  .card p, .event p {
+    font-size: 0.95rem;
+  }
+  
+  /* Call to Action */
+  .call-to-action {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .call-to-action p {
+    margin-bottom: 30px;
+  }
+  
+  /* Text Utilities */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-4 {
+    margin-top: 2rem;
+  }
+  
+  .hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero {
+      padding: 80px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  

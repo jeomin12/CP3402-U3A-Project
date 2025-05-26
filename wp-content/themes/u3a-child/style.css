@@ -1,14 +1,10 @@
 /*
-Theme Name: U3A Child Theme
-Template: twentytwentyfour
-Version: 1.0
+Theme Name: U3A Child
+Theme URI: https://example.com/u3a-child/
+Description: A child theme for Twenty Twenty-One tailored for U3A
 Author: Your Name
-Description: A custom child theme for U3A Townsville built for CP3402.
-Tags: custom-theme, responsive, u3a
+Author URI: https://example.com
+Template: twentytwentyfive
+Version: 1.0.0
+Text Domain: u3a-child
 */
-
-body {
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-  }
-  

@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="container text-center">
     <h1>Contact U3A Townsville</h1>
     <p>We’d love to hear from you. Whether you have a question, suggestion, or need help joining — we’re here for you.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/U3APromoDay.jpg" alt="U3A Community" class="contact-hero-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/IMG_3073.JPG" alt="U3A Community" class="contact-hero-image">
   </div>
 </section>
 

@@ -1,10 +1,13 @@
 /*
-Theme Name: U3A Child
-Theme URI: https://example.com/u3a-child/
-Description: A child theme for Twenty Twenty-One tailored for U3A
-Author: Your Name
-Author URI: https://example.com
+Theme Name: U3A Child Theme
+Theme URI: https://u3a-townsville.org.au/
+Description: A custom child theme for U3A Townsville.
+Author: Jeomin Gimmi
+Author URI: https://github.com/jeomin12
 Template: twentytwentyfive
-Version: 1.0.0
-Text Domain: u3a-child
+Version: 1.0
 */
+
+@import url("../twentytwentyfive/style.css");
+
+/* Add your custom styles below this line */

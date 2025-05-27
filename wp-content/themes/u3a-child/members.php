@@ -20,7 +20,7 @@ get_header(); ?>
       <div class="card">
         <h3>Member Portal</h3>
         <p>Access your profile, register for classes, and renew your membership securely online.</p>
-        <a href="https://members.u3atownsville.org.au" class="btn btn-outline" target="_blank">Go to Portal</a>
+        <a href="/login" class="btn btn-outline" target="_blank">Go to Portal</a>
       </div>
 
       <div class="card">

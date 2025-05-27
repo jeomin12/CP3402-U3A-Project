@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="container text-center">
     <h1>Partner With U3A</h1>
     <p>Support lifelong learning and healthy ageing by becoming a valued sponsor of U3A Townsville.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/U3APromoDay.jpg" alt="Sponsorship Banner" class="sponsor-hero-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sponsorship.png" alt="Sponsorship Banner" class="sponsor-hero-image">
   </div>
 </section>
 

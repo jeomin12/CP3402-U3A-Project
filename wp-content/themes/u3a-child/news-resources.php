@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="container text-center">
     <h1>News & Resources</h1>
     <p>Stay informed with the latest updates, stories, and downloadable resources from U3A Townsville.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NewsletterBanner.jpg" alt="News and Newsletter" class="news-hero-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/IMG_3255.JPG" alt="News and Newsletter" class="news-hero-image">
   </div>
 </section>
 
@@ -21,13 +21,13 @@ get_header(); ?>
       <div class="news-item">
         <h3>April Newsletter Released</h3>
         <p>Catch up on all the April activities, events, and highlights in our official newsletter.</p>
-        <a href="/downloads/newsletter-april-2025.pdf" class="btn btn-outline">Read Newsletter</a>
+        <a href="/newsletters" class="btn btn-outline">Read Newsletter</a>
       </div>
 
       <div class="news-item">
         <h3>New Courses Announced</h3>
         <p>We’ve added Digital Literacy and Creative Journaling to the Term 3 line-up. Check the full timetable for session details.</p>
-        <a href="/timetable" class="btn btn-outline">View Timetable</a>
+        <a href="/assets/U3A CLASS TIMETABLE.docx" class="btn btn-outline">View Timetable</a>
       </div>
     </div>
   </div>
@@ -37,11 +37,10 @@ get_header(); ?>
   <div class="container">
     <h2>Member Resources</h2>
     <ul class="resource-list">
-      <li><a href="/downloads/u3a-membership-form.pdf">Membership Application Form (PDF)</a></li>
-      <li><a href="/downloads/code-of-conduct.pdf">Code of Conduct</a></li>
-      <li><a href="/downloads/tutor-handbook.pdf">Tutor Handbook</a></li>
-      <li><a href="/downloads/strategic-plan-2024.pdf">Strategic Plan 2024–2027</a></li>
-      <li><a href="/downloads/event-calendar.pdf">Event Calendar</a></li>
+      <li><a href="/assets/Webpage decriptions 29 April.docx">Code of Conduct</a></li>
+      <li><a href="/assets/Paper by Dr Martin Bridgstock.pdf">Tutor Handbook</a></li>
+      <li><a href="/assets/Strategic Plan Committee 15 Jan 2018.docx">Strategic Plan 2024–2027</a></li>
+      <li><a href="/assets/Calendar.pdf">Event Calendar</a></li>
     </ul>
   </div>
 </section>

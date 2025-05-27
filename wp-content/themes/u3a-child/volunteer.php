@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="container text-center">
     <h1>Volunteer With U3A</h1>
     <p>Share your skills, meet new people, and make a meaningful contribution to the U3A community.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/U3APromoDay.jpg" alt="Volunteer Banner" class="volunteer-hero-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/volunteer.png" alt="Volunteer Banner" class="volunteer-hero-image">
   </div>
 </section>
 

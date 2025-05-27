@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="container text-center">
     <h1>Join U3A Townsville</h1>
     <p>Discover the benefits of becoming a member of our vibrant learning community.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/U3APromoDay.jpg" alt="U3A Promo" class="membership-hero-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Unknown.JPG" alt="U3A Promo" class="membership-hero-image">
   </div>
 </section>
 

@@ -19,5 +19,6 @@ jobs:
         host: ${{ secrets.REMOTE_HOST }}
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.DEPLOY_KEY }}
-        source: "wp-content/themes/u3a-child"
-        target: ${{ secrets.REMOTE_PATH }}
+        source: "wp-content/themes/u3a_child/*"
+        target: "/opt/bitnami/wordpress/wp-content/themes/u3a_child"
+

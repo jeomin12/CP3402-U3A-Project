@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="container text-center">
     <h1>About U3A Townsville</h1>
     <p>Fostering lifelong learning, connection, and community for people in their third age of life.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Terry-and-TCC-Maurie-Soars.jpg" alt="Vincent campus opening" class="about-hero-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/U3A Spanish Magnetic Island.jpg" alt="Vincent campus opening" class="about-hero-image">
   </div>
 </section>
 

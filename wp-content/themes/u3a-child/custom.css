@@ -1171,7 +1171,83 @@ body {
       font-size: 0.9rem;
     }
   }
-   
+  
+/* -------------------------------------
+   HISTORY & ACHIEVEMENTS PAGE STYLES
+------------------------------------- */
+
+.history-hero {
+    background-color: #0057a8;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .history-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .history-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  /* Origins and Impact */
+  .our-history h2,
+  .milestones h2,
+  .impact h2 {
+    color: #0057a8;
+    margin-bottom: 20px;
+  }
+  
+  .our-history p,
+  .impact p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Milestones List */
+  .milestone-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .milestone-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+  }
+  
+  .milestone-list li::before {
+    content: \"\\2022\";
+    color: #106d5e;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .history-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .milestone-list {
+      font-size: 0.95rem;
+    }
+  
+    .our-history p,
+    .impact p {
+      font-size: 0.95rem;
+    }
+  }
+  
   
   
   

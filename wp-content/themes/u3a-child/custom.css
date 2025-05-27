@@ -1915,4 +1915,74 @@ body {
       font-size: 1rem;
     }
   }
+/* -------------------------------------
+   UPDATES & NOTICES PAGE STYLES
+------------------------------------- */
+
+.updates-hero {
+    background-color: #0057a8;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .updates-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .updates-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  /* Updates Feed */
+  .updates-feed {
+    padding: 60px 20px;
+  }
+  
+  .update-item {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+  }
+  
+  .update-item h3 {
+    color: #106d5e;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .update-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .update-item a {
+    color: #0057a8;
+    text-decoration: underline;
+  }
+  
+  .update-item a:hover {
+    text-decoration: none;
+    color: #003b80;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .updates-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .update-item h3 {
+      font-size: 1.1rem;
+    }
+  
+    .update-item p {
+      font-size: 0.9rem;
+    }
+  }
   

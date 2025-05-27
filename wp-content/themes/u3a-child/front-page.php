@@ -44,7 +44,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="text-center mt-4">
-      <a href="/activities" class="btn">View All Activities</a>
+      <a href="/courses" class="btn">View All Activities</a>
     </div>
   </div>
 </section>

@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="container text-center">
     <h1>Make a Donation</h1>
     <p>Your contribution helps us provide affordable, meaningful learning experiences for older adults in our community.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/U3APromoDay.jpg" alt="Donate Banner" class="donate-hero-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/donation.png" alt="Donate Banner" class="donate-hero-image">
   </div>
 </section>
 

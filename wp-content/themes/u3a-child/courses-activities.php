@@ -1,78 +1,120 @@
 <?php
 /**
- * Template Name: Courses & Activities
- * Description: Displays U3A Townsville's courses and activities in an engaging and categorized format.
+ * Template Name: Course Overview
+ * Description: Landing page for U3A Townsville’s course categories and activities.
  */
 
 get_header(); ?>
 
-<section class="section activity-hero">
+<section class="section course-overview-hero">
   <div class="container text-center">
     <h1>Courses & Activities</h1>
-    <p>Engage your mind and body with our wide variety of learning opportunities and social groups.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Photographyclass.jpg" alt="Photography class" class="activity-hero-image">
+    <p>U3A Townsville offers a rich variety of programs to stimulate your mind, body, and spirit. Whether you're interested in history, want to stay active, or enjoy social games and gatherings, there's something for everyone.</p>
   </div>
 </section>
 
-<section class="section activity-overview">
+<section class="section course-category-grid bg-light">
   <div class="container">
-    <h2>What We Offer</h2>
-    <p>U3A Townsville offers over 30 courses and activity groups every week, all facilitated by passionate volunteers. Whether you want to stimulate your intellect, stay active, or meet new friends, there’s something for everyone.</p>
-  </div>
-</section>
-
-<section class="section course-categories bg-light">
-  <div class="container">
-    <h2>Explore by Category</h2>
     <div class="grid-columns-3">
 
       <div class="card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/MagneticIslandTaiChi002.jpg" alt="Tai Chi">
-        <h3>Health & Fitness</h3>
-        <p>Tai Chi, walking, and gentle exercise help maintain flexibility, balance, and well-being.</p>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/IMG_3133.JPG" alt="Academic Courses" style="width:100%; border-radius: 8px; margin-bottom: 15px;">
+        <h3>Academic & Interest-Based</h3>
+        <p>Delve into topics like history, philosophy, language, and the arts through engaging peer-led classes and discussion groups that foster creativity and critical thinking.</p>
+        <a href="/academic" class="btn btn-outline">Explore Topics</a>
+      </div>
+      
+      <div class="card">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/MagneticIslandTaiChi003.JPG" alt="Health & Wellbeing" style="width:100%; border-radius: 8px; margin-bottom: 15px;">
+        <h3>Health & Wellbeing</h3>
+        <p>Keep your body active and mind balanced with courses in Tai Chi, walking groups, dance for fitness, gentle exercise, and mindfulness techniques that enhance wellness.</p>
+        <a href="/health" class="btn btn-outline">View Activities</a>
       </div>
 
       <div class="card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/FrenchGroup1.jpg" alt="Language class">
-        <h3>Languages</h3>
-        <p>Practice and learn languages including French, Spanish, Russian, Indonesian, and more in a social setting.</p>
-      </div>
-
-      <div class="card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ArtGroup.jpg" alt="Art class">
-        <h3>Arts & Creativity</h3>
-        <p>Join drawing, painting, pottery, craft, and beading classes to express your creativity and relax.</p>
-      </div>
-
-      <div class="card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SuccessfulInvestors3.jpg" alt="Finance course">
-        <h3>Finance & Technology</h3>
-        <p>Understand markets, investment, and computing with confidence. Our tech and investor groups make it simple.</p>
-      </div>
-
-      <div class="card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/FridayTalk_SuzieDancenorth.jpg" alt="Friday Talk">
-        <h3>Talks & Lectures</h3>
-        <p>Attend our popular Friday Talks, guest speaker events, and themed discussion series covering many interests.</p>
-      </div>
-
-      <div class="card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/U3A-SINGERS.jpg" alt="Singers">
-        <h3>Music & Performance</h3>
-        <p>Enjoy singing, playing instruments, and even performing with others in a relaxed, supportive environment.</p>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/History.JPG" alt="Social Courses" style="width:100%; border-radius: 8px; margin-bottom: 15px;">
+        <h3>Social & Special Interest</h3>
+        <p>Make new friends and enjoy casual games, singing, crafting, and group meetups that promote connection, fun, and shared hobbies in a relaxed setting.</p>
+        <a href="/social" class="btn btn-outline">Join Social Groups</a>
       </div>
 
     </div>
   </div>
 </section>
 
-<section class="section call-to-action">
-  <div class="container text-center">
-    <h2>Ready to Join a Course?</h2>
-    <p>Browse the full timetable or contact us to find the perfect course for your interests and schedule.</p>
-    <a href="/membership" class="btn btn-secondary">Become a Member</a>
-    <a href="/timetable" class="btn btn-outline">View Full Timetable</a>
-  </div>
-</section>
+<style>
+.course-overview-hero {
+  background-color: #0057a8;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.course-overview-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.course-overview-hero p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.course-category-grid .grid-columns-3 {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 40px;
+}
+
+.course-category-grid .card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.course-category-grid .card h3 {
+  color: #106d5e;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.course-category-grid .card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.course-category-grid .btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid #0057a8;
+  border-radius: 6px;
+  color: #0057a8;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.course-category-grid .btn:hover {
+  background-color: #0057a8;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .course-overview-hero h1 {
+    font-size: 2rem;
+  }
+  .course-category-grid .card h3 {
+    font-size: 1.1rem;
+  }
+  .course-category-grid .card p {
+    font-size: 0.9rem;
+  }
+}
+</style>
 
 <?php get_footer(); ?>

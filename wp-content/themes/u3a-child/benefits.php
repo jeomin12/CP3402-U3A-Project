@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="container text-center">
     <h1>Membership Benefits</h1>
     <p>Enjoy a vibrant lifestyle filled with learning, friendships, and meaningful activities.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/U3APromoDay.jpg" alt="Membership Benefits" class="benefits-hero-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/IMG_3079.JPG" alt="Membership Benefits" class="benefits-hero-image">
   </div>
 </section>
 

@@ -1986,3 +1986,97 @@ body {
     }
   }
   
+/* -------------------------------------
+   DONATE PAGE STYLES
+------------------------------------- */
+
+.donate-hero {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .donate-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .donate-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  .donate-hero-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  /* Why Donate Section */
+  .why-donate h2 {
+    color: #0057a8;
+    margin-bottom: 20px;
+  }
+  
+  .why-donate ul {
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .why-donate li {
+    margin-bottom: 10px;
+  }
+  
+  /* Donation Methods */
+  .donation-methods h2 {
+    color: #0057a8;
+    margin-bottom: 20px;
+  }
+  
+  .donation-methods h3 {
+    color: #106d5e;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .donation-methods p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  /* CTA Section */
+  .call-to-action {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  .call-to-action .btn {
+    margin: 0 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .donate-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .donation-methods h3 {
+      font-size: 1.1rem;
+    }
+  }
+  

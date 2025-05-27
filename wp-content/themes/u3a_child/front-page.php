@@ -9,7 +9,7 @@ get_header(); ?>
 <section class="hero" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/U3APromoDay.jpg');">
   <div class="container hero-content">
     <h1>Welcome to U3A Townsville</h1>
-    <p>Empowering seniors through lifelong learning, active living, and social connection in our vibrant community.</p>
+    <p>Empowering seniors through lifelong learning, active living, and social connections in our vibrant community.</p>
     <a href="/membership" class="btn btn-secondary">Join U3A Today</a>
   </div>
 </section>

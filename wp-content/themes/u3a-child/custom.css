@@ -1248,6 +1248,120 @@ body {
     }
   }
   
+/* -------------------------------------
+   JOIN OR RENEW PAGE STYLES
+------------------------------------- */
+
+.join-hero {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .join-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .join-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  .join-hero-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  /* Benefits Section */
+  .join-benefits h2 {
+    color: #0057a8;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .benefit-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* How to Join Section */
+  .how-to-join h2,
+  .renew-membership h2 {
+    color: #0057a8;
+    margin-bottom: 20px;
+  }
+  
+  .how-to-join ol {
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .how-to-join li {
+    margin-bottom: 10px;
+  }
+  
+  .how-to-join a {
+    color: #0057a8;
+    text-decoration: underline;
+  }
+  
+  /* Renew Section */
+  .renew-membership ul {
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .renew-membership li {
+    margin-bottom: 10px;
+  }
+  
+  /* CTA */
+  .call-to-action {
+    background-color: #0057a8;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  .call-to-action .btn {
+    margin: 0 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .join-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .benefit-list,
+    .how-to-join ol,
+    .renew-membership ul {
+      font-size: 0.95rem;
+    }
+  }
+  
   
   
   

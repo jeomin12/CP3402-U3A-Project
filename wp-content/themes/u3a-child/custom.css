@@ -9,8 +9,8 @@
     background-color: #f9f9f9;
   }
   
-  /* HEADER STYLING */
-  .u3a-header {
+ /* HEADER STYLING */
+.u3a-header {
     background-color: #0057a8;
     color: #fff;
     width: 100%;
@@ -34,10 +34,11 @@
   }
   
   .u3a-logo img {
-    height: 55px;
+    height: 65px; /* 👈 Slightly larger logo */
     width: auto;
   }
   
+  /* Utility links (e.g., contact, login, search) */
   .u3a-header-utilities a {
     margin-left: 20px;
     color: white;
@@ -48,39 +49,59 @@
     display: inline-flex;
     margin-left: 20px;
   }
+  
   .u3a-search-form input[type="search"] {
-    padding: 6px;
+    padding: 6px 10px;
     border: none;
     border-radius: 4px 0 0 4px;
+    font-size: 0.95rem;
   }
+  
   .u3a-search-form button {
     background: #ffc107;
     border: none;
     padding: 6px 10px;
     border-radius: 0 4px 4px 0;
+    cursor: pointer;
   }
   
-  /* NAV BAR */
+  /* NAVIGATION BAR */
   .u3a-navbar {
     background-color: #ffffff;
     border-bottom: 3px solid #0057a8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
   }
+  
+  .u3a-logo {
+    flex-shrink: 0;
+  }
+  
+  .u3a-logo img {
+    height: 65px;
+    width: auto;
+  }
+  
   
   .u3a-nav-inner {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* 👈 aligns left */
     align-items: center;
     padding: 12px 20px;
+    gap: 40px; /* spacing between logo and nav */
   }
+  
   
   /* MAIN MENU */
   .u3a-menu {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px; /* 👈 smaller spacing between menu tabs */
+    margin: 0;
+    padding: 0;
   }
+  
   
   .u3a-menu li {
     position: relative;
@@ -90,25 +111,28 @@
     text-decoration: none;
     font-weight: 600;
     color: #0057a8;
-    padding: 10px;
+    padding: 8px 10px; /* 👈 Reduced padding */
+    font-size: 0.95rem; /* 👈 Slightly smaller font */
     display: block;
     transition: 0.3s;
+    border-radius: 4px;
   }
+  
+  
   
   .u3a-menu a:hover {
     background-color: #0057a8;
     color: #fff;
-    border-radius: 4px;
   }
   
-  /* DROPDOWNS */
+  /* DROPDOWN STYLING */
   .u3a-menu li ul {
     position: absolute;
     top: 100%;
     left: 0;
     background-color: white;
     min-width: 200px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     display: none;
     z-index: 999;
   }
@@ -125,7 +149,9 @@
     padding: 10px 15px;
     color: #0057a8;
     background-color: #f4f8fb;
+    border-radius: 0;
   }
+  
   .u3a-menu li ul a:hover {
     background-color: #0057a8;
     color: white;
@@ -139,28 +165,47 @@
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
+    white-space: nowrap;
   }
   
   .u3a-donate-btn:hover {
     background-color: #0b5d50;
   }
   
-  /* RESPONSIVE MENU - BASIC STACKING */
+  /* RESPONSIVE MENU */
   @media screen and (max-width: 768px) {
-    .u3a-nav-inner, .u3a-header-inner {
+    .u3a-nav-inner,
+    .u3a-header-inner {
       flex-direction: column;
       align-items: flex-start;
     }
+  
     .u3a-menu {
       flex-direction: column;
+      width: 100%;
       gap: 0;
+    }
+  
+    .u3a-menu li {
       width: 100%;
     }
+  
     .u3a-menu li ul {
       position: relative;
       box-shadow: none;
     }
+  
+    .u3a-search-form {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .u3a-search-form input[type="search"] {
+      flex: 1;
+      width: 100%;
+    }
   }
+  
   
 
 /* Homepage Styles */
